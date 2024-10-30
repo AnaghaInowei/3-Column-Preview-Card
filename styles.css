@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 4.5rem auto;
+    max-height: 1440px;
+}
+
+.sedans, .suv, .luxury {
+    height: 20rem;
+    width: 10rem;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 3rem;
+}
+
+img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.cars {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 3rem;
+    width: 7rem;
+    height: 5rem;
+    text-align: center;
+    align-content: center;
+}
+
+#sedan-car {
+    color: hsl(31, 77%, 52%);
+}
+
+#suv-car {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury-car {
+    color: hsl(179, 100%, 13%);
+}
+
+a {
+    text-decoration: none;
+}
+#sedan-car:hover, #suv-car:hover, #luxury-car:hover{
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+#sedan-car:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+#suv-car:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+#luxury-car:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+p {
+    color: hsla(0, 2%, 100%, 0.75);
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+        align-content: center;
+        margin: 4.5rem auto;
+
+    }
+
+    .sedans {
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .luxury {
+        border-radius: 0px 0px 5px 5px;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
